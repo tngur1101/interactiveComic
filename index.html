@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 4, from LayoutIt!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<style>
+		form{position:relative;}
+		.upload{background:#000;color:#fff;width:100px;height:30px;line-height:30px;text-align:center;cursor:pointer;}
+		input{position:absolute;top:0;left:0;height:30px;width:100px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+		img{
+			width: 300px;
+			height: 300px;
+		}
+	  </style>
+  </head>
+  <body>
+
+   <!-- <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+			 
+			<button type="button" class="btn btn-success">
+				imageload
+			</button>
+			<h2>
+				Heading
+			</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		-->
+		
+		<body>
+	
+			<form enctype="multipart/form-data" name="form1" id="form0">
+				<input id="f" type="file"  onchange="change()" multiple/>
+				<div class="upload">upload</div>
+				<p>post:</p>
+				
+				<!-- <p id="preview"></p> -->
+			</form>
+		<textarea id="code-html" name="code-html" cols="" rows="" style="margin: 0px; width: 1200px; height: 974px;"></textarea>
+		<div class="col-md-8">
+			
+		</div>
+		<div class="col-md-2">
+			 
+			<button type="button" class="btn btn-success btn-block btn-sm">
+				save
+			</button> 
+			<button type="button" class="btn btn-success btn-block btn-sm">
+				output
+			</button>
+		</div>
+	</div>
+</div>
+    <script src="placeImage.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
