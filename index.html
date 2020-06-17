@@ -12,7 +12,15 @@
     <link rel="stylesheet" type="text/css" href="css/style.material.css">
     <link rel="stylesheet" type="text/css" href="css/style.modern.css">
     <style>
-      
+  
+      form{position:relative;}
+		.upload{background:#000;color:#fff;width:100px;height:30px;line-height:30px;text-align:center;cursor:pointer;}
+		input{position:absolute;top:0;left:0;height:30px;width:100px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+		img{
+			width: 300px;
+			height: 300px;
+		}
+    
       
     
       </style>
@@ -35,15 +43,16 @@
             <div class="paper-container"></div>
             <div class="inspector-container"></div>
             <div class="navigator-container"></div>
+            <form enctype="multipart/form-data" name="form1" id="form0">
+              <input id="f" type="file"  onchange="change()" multiple/>
+              <div class="upload">upload</div>
       </div>
-      <form enctype="multipart/form-data" name="form1" id="form0">
-        <input id="f" type="file"  onchange="change()" multiple/>
-        <div class="upload">upload</div>
-        <p>post:</p>
-        
-      </form>
+     
   </div>
-
+  
+    
+    
+  </form>
     <!-- Rappid/JointJS dependencies: -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/lodash/lodash.js"></script>
@@ -103,7 +112,7 @@
   </script>
    
   
-
+ 
 
 </body>
 </html>
